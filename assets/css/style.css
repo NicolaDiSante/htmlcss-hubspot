@@ -147,10 +147,10 @@ main {
 }
 
 section.info{
- /*  height: 600px; */
   background-image: linear-gradient(to right, rgb(0, 117, 121), rgb(0, 213, 228));
   color: rgb(255, 255, 255);
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .text {
@@ -171,4 +171,75 @@ section.info{
   border-right: none;
 }
 
+section.info-two{
+  background-color: white;
+}
 
+.info-two .text{
+  width: 40%;
+  padding-right: 10%;
+}
+
+.info-two .sponsors{
+  width: 58%;
+  margin-left: 2%;
+  margin-top: 50px;
+}
+
+.info-two .sponsors ul li, .languages ul li{
+  list-style: none;
+  display: inline;
+}
+
+.info-two .sponsors ul li img{
+  width: 150px;
+  height: 60px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+
+.info-two h2{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+
+.woman{
+  text-align: right;
+}
+
+.woman img{
+  height: 400px;
+}
+
+footer{
+  height: 600px;
+  background-color: rgb(30, 30, 92);
+  color: white;
+}
+
+.col-last{
+  width: 25%;
+}
+
+.col-last ul li, .languages ul li{
+  list-style: none;
+  margin: 20px 0;
+}
+
+.col-last ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.faq{
+  padding-top: 50px;
+}
+
+.languages{
+  text-align: center;
+  padding-bottom: 30px;
+  margin: 50px auto;
+  border-bottom: 1px solid white;
+}
