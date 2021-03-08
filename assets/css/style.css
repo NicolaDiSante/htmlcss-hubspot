@@ -1,3 +1,5 @@
+/* DEFAULT */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,21 +7,21 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   min-width: 1200px;
 }
 
-.clearfix:after{
-  content:"";
-  clear:both;
-  display:table;
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.float-left{
+.float-left {
   float: left;
 }
 
-header{
+header {
   height: 80px;
   background-color: white;
 }
@@ -28,7 +30,7 @@ header{
   width: 50%;
 }
 
-.container-70{
+.container-70 {
   width: 100%;
   padding: 0 15%;
 }
@@ -42,70 +44,138 @@ header{
   margin-bottom: 50px;
 }
 
-.menu.first{
-  position:fixed;
+/* /DEFAULT */
+
+/* BUTTONS & CHECKS */
+
+.fas.fa-check-circle {
+  color: orange;
+  margin-right: 15px;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn-gray {
+  background-color: darkgray;
+  color: black;
+}
+
+.btn-white {
+  background-color: white;
+  color: orangered;
+  border: 1px solid orangered;
+}
+
+.btn-orange,
+.btn.big {
+  background-color: orangered;
+  color: white;
+}
+
+.btn.big {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* /BUTTONS & CHECKS */
+
+/* MENU */
+
+.menu.first {
+  position: fixed;
   width: 100%;
   padding: 0 15%;
   height: 80px;
   line-height: 80px;
   background-color: #f4f9fd;
   top: 0px;
-  left:0px;
+  left: 0px;
   border-bottom: 1px solid black;
 }
 
-.menu ul li{
+.menu ul li,
+.box-right ul li {
   display: inline;
-  list-style:none;
+  list-style: none;
+  margin-right: 20px;
 }
 
-.menu ul li a{
+a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
-ul.right{
-  float:right;
+ul.right {
+  float: right;
 }
 
-.menu.second{
+.menu.second {
   margin-top: 80px;
   background-color: white;
   line-height: 80px;
 }
 
+/* /MENU */
+
+/* JUMBOTRON */
+
 .jumbotron {
+  position: relative;
   height: 850px;
   background-image: url(../img/jumbotron.png);
   background-size: cover;
   border-bottom: 5px solid rgb(80, 80, 80);
 }
 
-.jumbotron-text{
+.jumbotron:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 40px;
+  content: "";
+  bottom: 0px;
+  background-color: #03baa1;
+  border-top: 5px solid rgb(34, 33, 33);
+}
+
+.jumbotron-text {
   padding-top: 10%;
 }
 
-.jumbotron h1{
+.jumbotron h1 {
   font-size: 70px;
   margin-bottom: 50px;
 }
 
+/* /JUMBOTRON */
+
+/* MAIN */
+
 main {
-  background-color:  #f4f9fd;
+  background-color: #f4f9fd;
   padding-bottom: 50px;
+}
+
+.box-right h3 {
+  margin-bottom: 20px;
 }
 
 .cube {
   text-align: center;
   padding-top: 50px;
-  
 }
 
-.cube img{
+.cube img {
   height: 250px;
 }
 
-.box{
+.box {
   height: 350px;
   background-color: white;
   box-shadow: 0px 0px 8px rgb(156, 129, 129);
@@ -117,12 +187,14 @@ main {
   text-align: center;
 }
 
-.box-left img{
+.box-left img {
   height: 200px;
+  display: block;
+  margin-left: 70px;
 }
 
-.box-right{
-  width:68%;
+.box-right {
+  width: 68%;
   padding: 50px 50px;
 }
 
@@ -130,7 +202,9 @@ main {
   text-align: center;
 }
 
-.col-left, .col-right, .col-center{
+.col-left,
+.col-right,
+.col-center {
   width: calc(92% / 3);
   height: 550px;
   background-color: white;
@@ -141,13 +215,41 @@ main {
   margin: 0 4%;
 }
 
-.col img{
+.col img {
   height: 200px;
   padding: 10px 0;
 }
 
-section.info{
-  background-image: linear-gradient(to right, rgb(0, 117, 121), rgb(0, 213, 228));
+.col ul li {
+  list-style: none;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.box-right p,
+.col p {
+  position: relative;
+}
+
+.box-right p:after,
+.col p:after {
+  position: absolute;
+  top: 95px;
+  right: 25%;
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  border-bottom: 2px solid gray;
+}
+
+section.info {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 117, 121),
+    rgb(0, 213, 228)
+  );
   color: rgb(255, 255, 255);
   text-align: center;
   padding-bottom: 50px;
@@ -161,6 +263,11 @@ section.info{
   border-bottom: 2px solid white;
 }
 
+.row-one h3,
+.row-two h3 {
+  font-size: 40px;
+}
+
 .cell {
   border-right: 2px solid white;
   width: calc(100% / 4);
@@ -171,75 +278,99 @@ section.info{
   border-right: none;
 }
 
-section.info-two{
+section.info-two {
   background-color: white;
 }
 
-.info-two .text{
+.info-two .text {
   width: 40%;
   padding-right: 10%;
 }
 
-.info-two .sponsors{
+.info-two .sponsors {
   width: 58%;
   margin-left: 2%;
-  margin-top: 50px;
+  margin-top: 65px;
 }
 
-.info-two .sponsors ul li, .languages ul li{
+.info-two .sponsors ul li,
+.languages ul li {
   list-style: none;
   display: inline;
 }
 
-.info-two .sponsors ul li img{
+.info-two .sponsors ul li img {
   width: 150px;
   height: 60px;
   padding-right: 30px;
   padding-bottom: 30px;
 }
 
-
-.info-two h2{
+.info-two h2 {
   font-size: 50px;
   margin-bottom: 20px;
 }
 
+.text-three {
+  width: 40%;
+}
 
-.woman{
+.woman {
   text-align: right;
+  width: 60%;
 }
 
-.woman img{
+.woman img {
   height: 400px;
+  float: right;
 }
 
-footer{
-  height: 600px;
+/* /MAIN */
+
+/* FOOTER */
+
+footer {
   background-color: rgb(30, 30, 92);
   color: white;
+  padding-bottom: 30px;
 }
 
-.col-last{
+.col-last {
   width: 25%;
 }
 
-.col-last ul li, .languages ul li{
+.col-last ul li,
+.languages ul li {
   list-style: none;
   margin: 20px 0;
 }
 
-.col-last ul li a{
+.col-last ul li a {
   color: white;
   text-decoration: none;
 }
 
-.faq{
+.faq {
   padding-top: 50px;
 }
 
-.languages{
+.languages {
   text-align: center;
   padding-bottom: 30px;
   margin: 50px auto;
   border-bottom: 1px solid white;
 }
+
+.menu.menu-last a {
+  color: white;
+}
+
+.fab {
+  margin-right: 10%;
+}
+
+.languages ul li {
+  margin-right: 20px;
+}
+
+/* /FOOTER */
