@@ -9,6 +9,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   min-width: 1200px;
+  font-weight: 400;
 }
 
 .clearfix:after {
@@ -44,18 +45,29 @@ header {
   margin-bottom: 50px;
 }
 
+.mb30{
+  margin-bottom: 30px;
+}
+
+.pt20{
+  padding-top: 20px;
+}
 /* /DEFAULT */
 
 /* BUTTONS & CHECKS */
 
 .fas.fa-check-circle {
-  color: orange;
+  color: orangered;
   margin-right: 15px;
 }
 
 .btn {
   border-radius: 5px;
   padding: 10px;
+}
+
+.btn:hover, .btn.big:hover{
+  background-color: rgba(204, 97, 97, 0.849);
 }
 
 .btn-gray {
@@ -71,16 +83,16 @@ header {
 
 .btn-orange,
 .btn.big {
-  background-color: orangered;
+  background-color: rgba(255, 79, 15, 0.733);
   color: white;
 }
 
 .btn.big {
   text-decoration: none;
   display: inline-block;
-  padding: 20px 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 20px 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* /BUTTONS & CHECKS */
@@ -97,6 +109,7 @@ header {
   top: 0px;
   left: 0px;
   border-bottom: 1px solid black;
+  z-index: 999;
 }
 
 .menu ul li,
@@ -119,6 +132,11 @@ ul.right {
   margin-top: 80px;
   background-color: white;
   line-height: 80px;
+}
+
+#eng{
+  padding-right: 25px;
+  border-right: 2px solid black;
 }
 
 /* /MENU */
@@ -149,10 +167,15 @@ ul.right {
 }
 
 .jumbotron h1 {
-  font-size: 70px;
+  font-size: 60px;
   margin-bottom: 50px;
+  font-weight: 800;
+  
 }
 
+p.minor{
+  font-size: 12px;
+}
 /* /JUMBOTRON */
 
 /* MAIN */
@@ -206,7 +229,6 @@ main {
 .col-right,
 .col-center {
   width: calc(92% / 3);
-  height: 550px;
   background-color: white;
   box-shadow: 0px 0px 8px rgb(156, 129, 129);
 }
@@ -259,6 +281,14 @@ section.info {
   padding: 50px 0;
 }
 
+.text h2{
+  font-weight: 600;
+}
+
+.cell img{
+  height: 40px;
+}
+
 .row-one {
   border-bottom: 2px solid white;
 }
@@ -266,6 +296,12 @@ section.info {
 .row-one h3,
 .row-two h3 {
   font-size: 40px;
+  padding: 10px 10px;
+}
+
+.cell h3:after{
+  display: inline-block;
+  content: ' \002B';
 }
 
 .cell {
@@ -308,7 +344,7 @@ section.info-two {
 
 .info-two h2 {
   font-size: 50px;
-  margin-bottom: 20px;
+  font-weight: 800;
 }
 
 .text-three {
@@ -361,16 +397,18 @@ footer {
   border-bottom: 1px solid white;
 }
 
-.menu.menu-last a {
+.menu.menu-last a, .languages ul li a {
   color: white;
 }
 
 .fab {
   margin-right: 10%;
+  color: white;
 }
 
 .languages ul li {
   margin-right: 20px;
 }
+
 
 /* /FOOTER */
