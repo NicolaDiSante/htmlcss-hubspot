@@ -155,11 +155,12 @@ ul.right {
   position: absolute;
   display: block;
   width: 100%;
-  min-height: 100px;
+  height: 100px;
   content: "";
   bottom: 0px;
   background-color: #03baa1;
   border-top: 5px solid rgb(80, 80, 80);
+  z-index: 2;
 }
 
 .jumbotron-text {
@@ -324,8 +325,7 @@ section.info-two {
 }
 
 .info-two .sponsors {
-  width: 58%;
-  margin-left: 2%;
+  width: 60%;
   margin-top: 65px;
 }
 
@@ -335,11 +335,15 @@ section.info-two {
   display: inline;
 }
 
+.info-two .sponsors ul{
+  line-height: 60px;
+}
+
+
 .info-two .sponsors ul li img {
-  width: 150px;
-  height: 60px;
-  padding-right: 30px;
-  padding-bottom: 30px;
+  width: 24%;
+  height: 35px;
+  padding-right: 5%;
 }
 
 .info-two h2 {
@@ -366,7 +370,7 @@ section.info-two {
 /* FOOTER */
 
 footer {
-  background-color: rgb(30, 30, 92);
+  background-color: #32495b;
   color: white;
   padding-bottom: 30px;
 }
