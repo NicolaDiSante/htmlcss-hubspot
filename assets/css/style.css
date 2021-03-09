@@ -155,11 +155,11 @@ ul.right {
   position: absolute;
   display: block;
   width: 100%;
-  height: 40px;
+  min-height: 100px;
   content: "";
   bottom: 0px;
   background-color: #03baa1;
-  border-top: 5px solid rgb(34, 33, 33);
+  border-top: 5px solid rgb(80, 80, 80);
 }
 
 .jumbotron-text {
