@@ -482,3 +482,57 @@ footer {
     border-style: solid;
     border-color: #fff transparent;
 }
+
+.container-bot {
+  position:fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.container-bot img.chat{
+  padding: 10px 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: rgb(91, 89, 119);
+}
+
+.bot {
+  display: none;
+  position: absolute;
+  bottom: 78px;
+  right: 10px;
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 15px rgba(0,0,0,0.2);
+}
+
+.bot p {
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  padding: 25px;
+}
+
+.container-bot:hover .bot {
+  display:block; 
+}
+
+.bot-img{
+  position: absolute;
+  right: 125px;
+  top: -30px;
+  width: 50px;
+  background-color: #32495b;
+  border-radius: 50%;
+}
+
+.bot span{
+  position: absolute;
+  top:0;
+  right: 5px;
+  color: black;
+}
